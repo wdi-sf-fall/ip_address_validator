@@ -14,16 +14,10 @@ describe "#valid_ip?" do
     expect(valid_ip?("127.0.0.-2")).to be false
   end
 
-  it "returns false if the input is not a string" do
-    expect(valid_ip?(127)).to be false
-  end
+  # returns false if the input is not a string
 
-  it "returns false if there are less than 4 sets of numbers" do
-    expect(valid_ip?("127.0.3")).to be false
-  end
+  # returns false if there are less than 4 sets of numbers
 
-  it "returns false if there are more than 4 sets of numbers" do
-    expect(valid_ip?("127.0.0.0.5")).to be false
-  end
+  # returns false if there are more than 4 sets of numbers
   
 end
